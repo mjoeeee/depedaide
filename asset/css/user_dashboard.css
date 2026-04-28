@@ -1,0 +1,314 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../image/image 1.png');
+    background-size: 70%;
+    background-position: 60% 7vh;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../../image/header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* =====================
+   CONTAINER & SIDEBAR
+===================== */
+.container {
+    display: flex;
+    margin-top: 70px; /* header height */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 15px;
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    margin-left: 20px;
+}
+
+.dropdown-content a {
+    padding: 8px 10px;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* =====================
+   DASHBOARD CONTENT
+===================== */
+.dashboard-content {
+    margin-left: 270px; /* sidebar width + spacing */
+    padding: 20px;
+    flex: 1;
+}
+
+/* Form / User Container */
+.form-container, .form-container_user {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.form-container {
+    margin-left: 270px;
+    margin-right: 20px;
+}
+
+.form-container h1, .form-container_user h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* =====================
+   TABLE STYLES
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-icon {
+    color: #ff4d4d;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.action-icon:hover {
+    color: #cc0000;
+}
+
+/* =====================
+   CARDS
+===================== */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn-xs, .custom-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    border: 1px solid;
+    background: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-xs {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-xs:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.custom-btn {
+    border-color: rgb(0, 212, 21);
+    color: rgb(0, 212, 21);
+}
+
+.custom-btn:hover {
+    background: rgb(0, 212, 21);
+    color: #fff;
+}
+
+/* =====================
+   PROFILE LINK
+===================== */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-link {
+    background: linear-gradient(135deg, rgb(197, 43, 0), #2575fc);
+    color: white;
+    font-size: 0.8rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.profile-link i {
+    font-size: 1rem;
+}
+
+/* =====================
+   RESPONSIVE STYLES
+===================== */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+        position: fixed;
+        top: 70px;
+        height: calc(100vh - 70px);
+        z-index: 999;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .dashboard-content,
+    .form-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card {
+        flex: 1 1 100%; /* 1 card per row */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* Single card on very small screens */
+    }
+}

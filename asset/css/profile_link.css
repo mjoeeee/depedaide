@@ -1,0 +1,33 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile-link {
+    
+    background: linear-gradient(135deg,rgb(197, 43, 0), #2575fc);
+    color: white;
+    font-size: 0.8rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.profile-link i {
+    font-size: 1.0rem;
+}
+
+
+.badge-admin {
+    background-color: #007bff; /* Bootstrap primary color or any color you prefer */
+    color: white;
+    border-radius: 12px;
+    padding: 2px 8px;
+    margin-left: 10px; /* Space between name and badge */
+    font-size: 0.6em; /* Smaller font size for the badge */
+}

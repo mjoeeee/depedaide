@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DepAIDE Documentation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="relative min-h-screen text-gray-800 flex flex-col mx-6 lg:mx-36">
+  <!-- Background Image Layer -->
+  <div
+    class="fixed inset-0 bg-[url('https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/486218800_624967250519869_7063731705352419583_n.png?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFvJMAnleZee7XOxomJido8bF5Kjm6S7ZNsXkqObpLtk76t8Vix8WisRaPRk9FL3nADoeqTrWffvHYRtvmBaKEE&_nc_ohc=5c49q-7p5IIQ7kNvwH6bchq&_nc_oc=AdmHqgGQr99nO5w4WeGvGD2u12YdOht6jSxfGbwlMeHKEyaPt4-FYWTpwP5Dkgrw8M8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD2AGro9l-koK0PNoCDIls08aVUQKrlQU8flgK9V_cqNDoUw&oe=6831B710')] bg-full bg-center opacity-25 z-0">
+  </div>
+  <!--   
+    Content Layer
+    <div class="relative z-10 w-full"> -->
+
+  <!-- Header -->
+  <div class="relative z-10 w-full flex flex-col">
+    <!-- Header -->
+    <header
+      class="py-4 flex justify-between items-center z-50 border-black border-b px-4 lg:px-12 fixed top-0 w-full bg-white">
+      <button id="menu-toggle" class="lg:hidden text-blue-600 text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+      <h2 class="lg:text-2xl md:text-sm font-bold text-gray-700 uppercase">DepAIDE Documentation</h2>
+      <a href="https://ozamiz.deped.gov.ph/depaide" target="_blank"
+        class="uppercase text-xs bg-blue-600 text-white py-2 rounded-lg px-4 font-semibold flex items-center">
+        <span class="hidden sm:inline">Website</span>
+        <i class="fas fa-globe sm:hidden"></i>
+      </a>
+    </header>
+
+    <!-- Sidebar and Main Layout -->
+    <div class="flex pt-20">
+      <!-- Sidebar -->
+      <aside id="sidebar"
+        class="w-1/2 h-screen fixed  left-0 shadow-lg space-y-6 overflow-y-auto z-40 lg:relative bg-white">
+        <nav>
+          <ul>
+            <li>
+              <a href="#overview"
+                class="flex items-center space-x-2 text-gray-700 hover:text-white hover:bg-blue-600 px-4 py-2 text-sm transition-colors">
+                <i class="fas fa-book"></i>
+                <span>Overview</span>
+              </a>
+            </li>
+            <li class="group">
+              <a href="#features"
+                class="flex items-center space-x-2 text-gray-700 hover:text-white hover:bg-blue-600 px-4 py-2 text-sm transition-colors">
+                <i class="fas fa-list"></i>
+                <span>Features</span>
+              </a>
+              <!-- Submenu is now vertical -->
+              <ul class="pl-6">
+                <li>
+                  <a href="#user-side"
+                    class="flex items-center space-x-2 text-gray-700 hover:text-white hover:bg-orange-600 px-4 py-2 text-sm transition-colors">
+                    <i class="fas fa-user"></i>
+                    <span>User Side</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#admin-side"
+                    class="flex items-center space-x-2 text-gray-700 hover:text-white hover:bg-orange-600 px-4 py-2 text-sm transition-colors">
+                    <i class="fas fa-user-shield"></i>
+                    <span>Admin Side</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content Section -->
+      <main class="p-8 overflow-y-auto w-full">
+        <section id="overview" class="mb-8">
+          <h2 class="text-2xl font-bold mb-4 text-blue-600 uppercase border-b border-gray-400">Overview</h2>
+          <p class="text-md">Welcome to the Department of Education Portal for Assisting ICT Diagnosis and Enhancement
+            System documentation. This guide will walk you through the features and functionalities available in the
+            system.</p>
+        </section>
+
+        <section id="login" class="mb-8">
+          <h2 class="text-xl font-semibold mb-4 text-blue-600 uppercase border-b border-gray-400">Login</h2>
+          <h3 class="text-lg font-semibold mb-2">How to Log In</h3>
+          <ol class="list-decimal pl-5 space-y-2">
+            <li class="py-2">
+              <div class="bg-white rounded-xl shadow-md p-4">Open your web browser and go to
+                <strong>ozamiz.deped.gov.ph/depaide</strong>. You will be automatically redirected to the login page.
+                <img src="assets\Login.png" class="">
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="bg-white rounded-xl shadow-md p-4">Enter your <strong>DAWN</strong> username and password and
+                click the <strong>Login</strong> button.
+                <img src="assets\Credentials.png" class="">
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="bg-white rounded-xl shadow-md p-4">If your credentials are correct, you will be redirected to
+                the dashboard.
+                <img src="assets\Dashboard.jpg" class="">
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="text-xl font-semibold mt-8 mb-2">Role-Based Access</h3>
+          <p class="mb-4">The DepAIDE System provides role-based access control to ensure users have the appropriate
+            permissions. The available roles include:</p>
+
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300 shadow-md">
+              <thead class="bg-blue-600 text-white">
+                <tr>
+                  <th class="py-3 px-4 border-b text-left">Role</th>
+                  <th class="py-3 px-4 border-b text-left">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-gray-100">
+                  <td class="py-3 px-4 border-b font-semibold">System Admin</td>
+                  <td class="py-3 px-4 border-b">The admin can manage, process and set the status of the forms. They can
+                    as well edit, view and delete the forms</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                  <td class="py-3 px-4 border-b font-semibold">Personnel</td>
+                  <td class="py-3 px-4 border-b">The personnel can fill up the certain request forms they want to be of
+                    service to. The status of their request forms are also visible.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Features Section with User and Admin Side -->
+        <section id="features" class="mb-8">
+          <h2 class="text-2xl font-bold text-blue-600 uppercase border-b border-gray-400 mb-4">Features</h2>
+
+          <!-- User Side Section -->
+          <section id="user-side" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600 uppercase border-b border-gray-400">User Side</h2>
+            <ul class="list-decimal ml-6 space-y-4">
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Dashboard:</strong> Upon logging in, users are
+                  greeted with a clean and organized dashboard that includes various service categories displayed as
+                  cards. A status of total requests is also shown on the cards of the available services. A calendar is
+                  presented as well, containing the requests set on certain dates. They can view the forms or services
+                  to be done on the specified dates by clicking it.
+                  <img src="assets\Dashboard.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Request Status Calendar:</strong> This calendar
+                  displays all submitted requests by date, helping admins track activity and status trends throughout
+                  the month.
+                  <img src="assets\Request Status Calendar.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Printing ID Card:</strong> This request form is
+                  for the user who wishes to have a physical identity card (ID) to be printed. The personnel must first
+                  input the important details on the form and then click the “Update Details” button if they want to
+                  save the information they changed and redirect it to submitting a request for ID printing. A “Clear
+                  Field” button is also present if the user has misinput all the information in the input fields.
+                  <img src="assets\Printing ID.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>DepEd Email:</strong> On this form, the
+                  information needed for an email is linked to a DAWN account, which is why the system only requires the
+                  school ID, as this is the requirement to fulfill the creation of DepEd email accounts. The user will
+                  then click the “Apply Request” button to successfully submit the form.
+                  <img src="assets\DepEd Email.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Email Concern:</strong> This request form is for
+                  personnel who have concerns about their DepEd email accounts, such as forgotten passwords and other
+                  concerns regarding their email accounts. The personnel can submit a form raising the issues they are
+                  facing. The form includes an input box for the reason and a screenshot showing the email concern.
+                  <img src="assets\Email Concern.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>ICT Maintenance Request Form:</strong> This form
+                  is for the personnel within the division office who would like to request ICT Maintenance on their
+                  specific devices, property, and equipment that needs to be fixed or to inspect what the equipment is
+                  encountering and why it is working.
+                  <img src="assets\ICT Maintenance.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Documentation:</strong> This form is intended for
+                  personnel requesting documentation coverage for an event. The user must fill in the Event Title,
+                  Location of Event, Event Date and Time (including start and end times), and Details of the event. Once
+                  completed, the user clicks the "Apply Request" button to submit the request for documentation
+                  services.
+                  <img src="assets\Documentation.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Audio Visual Editing:</strong> This form is used
+                  for requesting audio-visual editing services. The personnel must provide the Project Title/Name,
+                  Project Description, and choose from dropdown options for Type of Project, Music Preferences, Expected
+                  Deliverables, Project Style & Tone, Preferred Delivery Method, and Project Deadline. After completing
+                  the required fields, the user submits the request by clicking the "Submit Form" button.
+                  <img src="assets\AV Form.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>ICT Equipment Inspection:</strong> This form is
+                  for requesting an inspection of ICT equipment. It requires the Item/Description, Property Number,
+                  Property Acknowledgement Receipt No., Acquisition Cost, Acquisition Date, Complaints (if any), and the
+                  Nature and Scope of Last Repair. After entering all the necessary information, the user submits the
+                  form by clicking the "Submit Form" button.
+                  <img src="assets\ICT Equipment Inspection.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Software Development:</strong> This form is for
+                  user or personnel who wishes to build a software program beneficial to both parties. Required
+                  information shall be filled in this form to further evaluate and assess the development of a program
+                  sysem or software.
+                  <img src="assets\Software Development.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Status:</strong> This section displays the
+                  current status of all submitted request forms. Each form type—such as ID Printing, DepEd Email, Email
+                  Concern, ICT Maintenance, Documentation, Audio Visual Editing, ICT Equipment Inspection, and Software
+                  Development—is shown along with its respective submission Date, Status (e.g., Pending, Approved, or
+                  Completed), and any Remarks provided by the ICT team.
+                  <img src="assets\Status.jpg" class="mt-2">
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Admin Side Section -->
+          <section id="admin-side" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600 uppercase border-b border-gray-400">Admin Side</h2>
+            <ul class="list-decimal ml-6 space-y-4">
+
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Dashboard:</strong> The dashboard provides a
+                  quick summary of all request statuses across categories. Admins can view counts, monitor progress, and
+                  navigate to specific sections.
+                  <img src="assets\Admin Dashboard.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Request Status Calendar:</strong> This calendar
+                  displays all submitted requests by date, helping admins track activity and status trends throughout
+                  the month.
+                  <img src="assets\Admin Calendar.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>ID Card Requests:</strong> Shows all pending ID
+                  card applications with employee details. Admins can approve, reject, or view more information as
+                  needed.
+                  <img src="assets\Admin ID Requests.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Email Requests:</strong> This section tracks
+                  DepEd email requests. Admins can check reported concerns and provide responses, remarks or updates.
+                  <img src="assets\Admin DepEd Email Request.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Email Concerns:</strong> This section tracks
+                  DepEd email issues like login problems. Admins can check reported concerns and provide responses or
+                  updates.
+                  <img src="assets\Admin DepEd Email Concern.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Audio Visual Editing:</strong> This page shows
+                  all AV project requests, including deadlines and progress. Admins can update project info and monitor
+                  completion status.
+                  <img src="assets\Admin AV.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Documentation Data:</strong> Displays
+                  documentation tasks and events for tracking purposes. Admins can view task details and update their
+                  statuses.
+                  <img src="assets\Admin Documentation.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>ICT Maintenance Requests:</strong> Lists
+                  maintenance requests related to ICT concerns. Admins can review, approve, or reject tasks based on the
+                  issue.
+                  <img src="assets\Admin ICT Maintenance Requests.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>ICT Equipment Inspection:</strong> Lists
+                  equipment inspection requests with property details and complaints. Admins can edit records or add
+                  remarks and use the search tool.
+                  <img src="assets\Admin ICT Equipment Inspection.jpg" class="mt-2">
+                </div>
+              </li>
+              <li>
+                <div class="bg-white rounded-xl shadow-md p-4"><strong>Software Development Requests:</strong> Displays
+                  all software/system development requests with descriptions and deadlines. Admins can edit details, add
+                  remarks, and search entries.
+                  <img src="assets\Admin Software Development.jpg" class="mt-2">
+                </div>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </main>
+    </div>
+</body>
+
+<script>
+  function toggleSubmenu(event) {
+    const targetId = event.currentTarget.getAttribute('data-target');
+    const submenu = document.getElementById(targetId);
+    submenu.classList.toggle('hidden');
+  }
+</script>
+
+</html>

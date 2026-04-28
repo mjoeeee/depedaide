@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../image/image 1.png');
+    background-size: 70%; 
+    background-position: 37% 7vh;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Navbar Custom Styles */
+.navbar-custom {
+    display: flex;
+    align-items: center;
+    background-image: url('../../image/header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust logo size */
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    margin-top: 70px; /* Adjust based on header height */
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.breadcrumb a:hover {
+    color: #007bff;
+}
+
+.breadcrumb span {
+    color: #777;
+}
+
+/* Form Container Styles */
+.form-container {
+    background-color: white;
+    
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Add margin around the form */
+}
+
+.form-container h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Center the heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased spacing between fields */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Increased spacing between label and input */
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px; /* Increased padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for inputs */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="file"] {
+    padding: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* Increased spacing between side-by-side fields */
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Increased spacing between buttons */
+    margin-top: 30px; /* Increased spacing above buttons */
+}
+
+.form-actions button {
+    padding: 12px 24px; /* Increased padding for buttons */
+    border: none;
+    border-radius: 8px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions button.cancel {
+    background-color: #ccc;
+    color: #333;
+}
+
+.form-actions button.cancel:hover {
+    background-color: #999;
+}
+
+.form-actions button.apply {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-actions button.apply:hover {
+    background-color: #0056b3;
+}
+
+/* Profile Section Styles */
+.box-body.box-profile {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 30%; /* Adjust width for profile section */
+}
+
+.profile-user-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-username {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn.btn-xs {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-xs:hover {
+    background-color: #0056b3;
+}
+
+.preview-image {
+    margin-bottom: 15px;
+}
+
+.preview-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.preview-image center {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Layout for Profile and User Details */
+.profile-and-details {
+    display: flex;
+    gap: 20px; /* Space between profile and user details */
+}
+
+.user-details {
+    flex: 1; /* User details take up remaining space */
+}
+ /* Header Card with Breadcrumb */
+ .header-card {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin: 0 5px;
+    color: #6c757d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-and-details {
+        flex-direction: column; /* Stack profile and user details vertically on smaller screens */
+    }
+
+    .box-body.box-profile {
+        width: 100%; /* Full width for profile section on smaller screens */
+    }
+}

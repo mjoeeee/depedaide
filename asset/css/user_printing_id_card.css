@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #C8C8C8;
+    background-image: url('../../image/image 1.png');
+    background-size: 70%; 
+    background-position: 60% 7vh; /* Adjust the percentage to move left (lower %) or right (higher %) */
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Navbar Custom Styles */
+.navbar-custom {
+    display: flex;
+    align-items: center;
+    background-image: url('../../image/header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust logo size */
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Container and Sidebar Styles */
+.container {
+    display: flex;
+    margin-top: 70px;/* Adjust based on header height */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white; /* Pure white background */
+    padding: 15px;
+    box-sizing: border-box;
+    height: calc(100vh - 70px); /* Full height minus header */
+    overflow-y: auto;
+    position: fixed;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.sidebar a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 18px;
+    color: #555; /* Icon color */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    margin-left: 20px; /* Indent dropdown items */
+}
+
+.dropdown-content a {
+    padding: 8px 10px; /* Smaller padding for dropdown items */
+}
+
+.dropdown.active .dropdown-content {
+    display: block; /* Show dropdown when active */
+}
+
+/* Form Container Styles */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 270px; /* Space for sidebar */
+    margin-bottom: 30px; /* Space for sidebar */
+    flex-grow: 1;
+    margin-right: 10px !important; /* Add some margin on the right */
+}
+
+.form-container h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Center the heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased spacing between fields */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Increased spacing between label and input */
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px; /* Increased padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for inputs */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="file"] {
+    padding: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* Increased spacing between side-by-side fields */
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Increased spacing between buttons */
+    margin-top: 30px; /* Increased spacing above buttons */
+}
+
+.form-actions button {
+    padding: 12px 24px; /* Increased padding for buttons */
+    border: none;
+    border-radius: 8px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions button.cancel {
+    background-color: #ccc;
+    color: #333;
+}
+
+.form-actions button.cancel:hover {
+    background-color: #999;
+}
+
+.form-actions button.apply {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-actions button.apply:hover {
+    background-color: #0056b3;
+}
+
+/* Profile Section Styles */
+.box-body.box-profile {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 30%; /* Adjust width for profile section */
+}
+
+.profile-user-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-username {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn.btn-xs {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-xs:hover {
+    background-color: #0056b3;
+}
+
+.preview-image {
+    margin-bottom: 15px;
+}
+
+.preview-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.preview-image center {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Layout for Profile and User Details */
+.profile-and-details {
+    display: flex;
+    gap: 20px; /* Space between profile and user details */
+}
+
+.user-details {
+    flex: 1; /* User details take up remaining space */
+}
+.logout-button {
+        margin-left: auto; /* Push logout button to the right */
+        margin-right:30px;
+        font-size: 25px;
+    }
+    .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile-link {
+    background: linear-gradient(135deg,rgb(197, 43, 0), #2575fc);
+    color: white;
+    font-size: 0.8rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.profile-link i {
+    font-size: 1.0rem;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+        position: fixed;
+        top: 70px;
+        height: calc(100vh - 70px);
+        z-index: 999;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .form-container {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        margin-right: 20px;
+    }
+
+    .profile-and-details {
+        flex-direction: column; /* Stack profile and user details vertically on smaller screens */
+    }
+
+    .box-body.box-profile {
+        width: 100%; /* Full width for profile section on smaller screens */
+    }
+}

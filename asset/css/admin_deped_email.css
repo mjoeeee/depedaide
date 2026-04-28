@@ -1,0 +1,241 @@
+
+
+
+.badge {
+    background-color: #ed671a;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 3px;
+}
+th, 
+td {
+    text-align: center; /* Center text */
+    vertical-align: middle; /* Center vertically */
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../image/image 1.png');
+    background-size: 70%; 
+    background-position: 60% 7vh; /* Adjust the percentage to move left (lower %) or right (higher %) */
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Navbar Custom Styles */
+.navbar-custom {
+    display: flex;
+    align-items: center;
+    background-image: url('../../image/header.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust logo size */
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Container and Sidebar Styles */
+.container {
+    display: flex;
+    margin-top: 70px; /* Adjust based on header height */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white; /* Pure white background */
+    padding: 15px;
+    box-sizing: border-box;
+    height: calc(100vh - 70px); /* Full height minus header */
+    overflow-y: auto;
+    position: fixed;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between menu and logo */
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.sidebar a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 18px;
+    color: #555; /* Icon color */
+}
+
+/* Sidebar Logo Styles */
+.sidebar-logo {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee; /* Add a separator line */
+}
+
+.sidebar-logo img {
+    max-width: 80%; /* Ensure the logo fits within the sidebar */
+    height: auto;
+}
+
+/* Form Container Styles */
+.form-container {
+    margin-top: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 270px; /* Space for sidebar */
+    flex-grow: 1;
+    margin-right: 20px; /* Add some margin on the right */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.form-container h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Center the heading */
+}
+
+/* DataTable Styles */
+#example {
+    width: 100% !important; /* Ensure the table takes full width */
+}
+
+/* Button Styles */
+.btn-edit, .btn-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 2px;
+    color: #007bff;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    color:rgb(179, 0, 0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+        position: fixed;
+        top: 70px;
+        height: calc(100vh - 70px);
+        z-index: 999;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .form-container {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        margin-right: 20px;
+    }
+}
+
+/* Notification Dropdown Styles */
+.notification {
+    position: relative;
+    margin-left: auto; /* Push notification to the right */
+    margin-right: 20px; /* Add some spacing */
+}
+
+.notification-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.notification-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    z-index: 1000;
+}
+
+.notification-dropdown.active {
+    display: block;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item:hover {
+    background-color: #f9f9f9;
+}
+
+.notification-header {
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    background-color: #f8f9fa;
+}
+
+.notification-footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.notification-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.notification-footer a:hover {
+    text-decoration: underline;
+}
